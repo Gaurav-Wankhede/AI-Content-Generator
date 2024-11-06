@@ -365,6 +365,37 @@
                     label: 'Specify any subtopics or key areas to focus on',
                     field: 'textarea',
                     name: 'subtopics'
+                },
+                {
+                    label: 'Select Language',
+                    field: 'select',
+                    name: 'language',
+                    required: true,
+                    options: [
+                        'Assamese',
+                        'Bengali',
+                        'Bodo',
+                        'Dogri', 
+                        'English',
+                        'Gujarati',
+                        'Hindi',
+                        'Kannada',
+                        'Kashmiri',
+                        'Konkani',
+                        'Maithili',
+                        'Malayalam', 
+                        'Manipuri',
+                        'Marathi',
+                        'Nepali',
+                        'Odia',
+                        'Punjabi',
+                        'Sanskrit',
+                        'Santali',
+                        'Sindhi',
+                        'Tamil',
+                        'Telugu',
+                        'Urdu'
+                    ]
                 }
             ]
         },
@@ -386,6 +417,37 @@
                     label: 'Specify key areas or aspects to cover',
                     field: 'textarea',
                     name: 'keyAreas'
+                },
+                {
+                    label: 'Select Language',
+                    field: 'select',
+                    name: 'language',
+                    required: true,
+                    options: [
+                        'Assamese',
+                        'Bengali',
+                        'Bodo',
+                        'Dogri', 
+                        'English',
+                        'Gujarati',
+                        'Hindi',
+                        'Kannada',
+                        'Kashmiri',
+                        'Konkani',
+                        'Maithili',
+                        'Malayalam', 
+                        'Manipuri',
+                        'Marathi',
+                        'Nepali',
+                        'Odia',
+                        'Punjabi',
+                        'Sanskrit',
+                        'Santali',
+                        'Sindhi',
+                        'Tamil',
+                        'Telugu',
+                        'Urdu'
+                    ]
                 }
             ]
         },
@@ -417,6 +479,37 @@
                     label: 'Enter specific news sources or articles for reference (optional)',
                     field: 'textarea',
                     name: 'newsSources'
+                },
+                {
+                    label: 'Select Language',
+                    field: 'select',
+                    name: 'language',
+                    required: true,
+                    options: [
+                        'Assamese',
+                        'Bengali',
+                        'Bodo',
+                        'Dogri', 
+                        'English',
+                        'Gujarati',
+                        'Hindi',
+                        'Kannada',
+                        'Kashmiri',
+                        'Konkani',
+                        'Maithili',
+                        'Malayalam', 
+                        'Manipuri',
+                        'Marathi',
+                        'Nepali',
+                        'Odia',
+                        'Punjabi',
+                        'Sanskrit',
+                        'Santali',
+                        'Sindhi',
+                        'Tamil',
+                        'Telugu',
+                        'Urdu'
+                    ]
                 }
             ]
         },
@@ -449,6 +542,37 @@
                     label: 'Specify any UPSC subjects or areas you think it might relate to (optional)',
                     field: 'textarea',
                     name: 'relatedAreas'
+                },
+                {
+                    label: 'Select Language',
+                    field: 'select',
+                    name: 'language',
+                    required: true,
+                    options: [
+                        'Assamese',
+                        'Bengali',
+                        'Bodo',
+                        'Dogri', 
+                        'English',
+                        'Gujarati',
+                        'Hindi',
+                        'Kannada',
+                        'Kashmiri',
+                        'Konkani',
+                        'Maithili',
+                        'Malayalam', 
+                        'Manipuri',
+                        'Marathi',
+                        'Nepali',
+                        'Odia',
+                        'Punjabi',
+                        'Sanskrit',
+                        'Santali',
+                        'Sindhi',
+                        'Tamil',
+                        'Telugu',
+                        'Urdu'
+                    ]
                 }
             ]
         },
@@ -470,6 +594,37 @@
                     label: 'Specify any particular focus areas or subtopics',
                     field: 'textarea',
                     name: 'focusAreas'
+                },
+                {
+                    label: 'Select Language',
+                    field: 'select',
+                    name: 'language',
+                    required: true,
+                    options: [
+                        'Assamese',
+                        'Bengali',
+                        'Bodo',
+                        'Dogri', 
+                        'English',
+                        'Gujarati',
+                        'Hindi',
+                        'Kannada',
+                        'Kashmiri',
+                        'Konkani',
+                        'Maithili',
+                        'Malayalam', 
+                        'Manipuri',
+                        'Marathi',
+                        'Nepali',
+                        'Odia',
+                        'Punjabi',
+                        'Sanskrit',
+                        'Santali',
+                        'Sindhi',
+                        'Tamil',
+                        'Telugu',
+                        'Urdu'
+                    ]
                 }
             ]
         },
@@ -497,6 +652,37 @@
                     label: 'Any specific instructions or focus areas',
                     field: 'textarea',
                     name: 'instructions'
+                },
+                {
+                    label: 'Select Language',
+                    field: 'select',
+                    name: 'language',
+                    required: true,
+                    options: [
+                        'Assamese',
+                        'Bengali',
+                        'Bodo',
+                        'Dogri', 
+                        'English',
+                        'Gujarati',
+                        'Hindi',
+                        'Kannada',
+                        'Kashmiri',
+                        'Konkani',
+                        'Maithili',
+                        'Malayalam', 
+                        'Manipuri',
+                        'Marathi',
+                        'Nepali',
+                        'Odia',
+                        'Punjabi',
+                        'Sanskrit',
+                        'Santali',
+                        'Sindhi',
+                        'Tamil',
+                        'Telugu',
+                        'Urdu'
+                    ]
                 }
             ]
         },
