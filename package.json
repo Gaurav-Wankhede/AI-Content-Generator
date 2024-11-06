@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm install --legacy-peer-deps && npm run build",
-    "start": "next start",
+    "build": "next build",
+    "start": "next start", 
     "lint": "next lint",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio"
@@ -25,28 +25,19 @@
     "lucide-react": "^0.446.0",
     "moment": "^2.30.1",
     "next": "14.2.13",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-quill": "^2.0.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
     "drizzle-kit": "^0.24.2",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  },
-  "overrides": {
-  "@toast-ui/react-editor": {
-    "react": "^18.2.0"
-  }
-  },
-  "resolutions": {
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0"
   }
 }
