@@ -506,7 +506,7 @@
             icon: 'https://cdn-icons-png.flaticon.com/128/3536/3536505.png',
             category: 'Professional Networking',
             slug: 'linkedin-post-generator',
-            aiPrompt: 'Generate a professional LinkedIn post based on the given topic and outline. The post should have a professional tone and be suitable for a business audience. If the topic is related to data science, include relevant code snippets or technical details where appropriate. For data science posts, consider including examples of data analysis techniques, machine learning algorithms, or data visualization methods. Provide the output in rich text editor format, ensuring any code snippets are properly formatted.',
+            aiPrompt: 'Generate a professional LinkedIn post based on the given topic and outline. The post should have a professional tone and be suitable for a business audience. If the topic is related to data science, include relevant code snippets or technical details where appropriate. For data science posts, consider including examples of data analysis techniques, machine learning algorithms, or data visualization methods. Provide the output in rich text editor format, ensuring any code snippets are properly formatted. If code snippets are included, also show the expected output or results of running that code. For example, if showing a data visualization code snippet, include ASCII art representation of the visualization output. If showing a machine learning model, include sample predictions or evaluation metrics.',
             form: [
                 {
                     label: 'Enter the main topic of your LinkedIn post',
@@ -523,6 +523,12 @@
                     label: 'Specify your industry or professional field',
                     field: 'input',
                     name: 'industry',
+                    required: true
+                },
+                {
+                    label: 'Include code examples? (Yes/No)',
+                    field: 'input',
+                    name: 'includeCode',
                     required: true
                 }
             ]

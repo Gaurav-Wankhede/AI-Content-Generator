@@ -12,6 +12,7 @@ import { db } from "@/utils/db";
 import { AIOutput } from "@/utils/schema";
 import { useUser } from "@clerk/nextjs";
 import moment from "moment";
+import { createRoot } from "react-dom/client";
 
 interface PROPS {
   params: {
