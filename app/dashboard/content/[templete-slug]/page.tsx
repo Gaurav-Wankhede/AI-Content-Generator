@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import FormSection from "../_components/FormSection";
 import OutputSection from "../_components/OutputSection";
 import Templetes from "@/app/(data)/Templetes";
-import { TEMPLETE } from "../../_components/TempleteListSection";
+import { TEMPLETE, FORM } from "../../_components/TempleteListSection";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft} from "lucide-react";
 import Link from "next/link";
@@ -21,7 +21,8 @@ interface PROPS {
 }
 
 function CreateNewContent(props: PROPS) {
-  const selectedTemplete: TEMPLETE | undefined = Templetes?.find(
+  // Cast the Templetes array to TEMPLETE[] to ensure type safety
+  const selectedTemplete = (Templetes as TEMPLETE[])?.find(
     (item) => item.slug == props.params["templete-slug"]
   );
 
