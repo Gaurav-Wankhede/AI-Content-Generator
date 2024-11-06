@@ -25,22 +25,21 @@ function OutputSection({ aiOutput }: PROPS): JSX.Element {
   }, [aiOutput]);
 
   return (
-    <div className="bg-white shadow-lg border rounded-lg">
-      <div className="flex justify-between items-center p-5">
-        <h2 className="font-medium text-lg">Your Result</h2>
-        <Button className="flex gap-2">
-          <Copy className="w-4 h-4" /> Copy{" "}
+    <div className="bg-white shadow-lg border rounded-lg w-full">
+      <div className="flex flex-col sm:flex-row justify-between items-center p-3 sm:p-4 md:p-5 gap-3 sm:gap-0">
+        <h2 className="font-medium text-base sm:text-lg">Your Result</h2>
+        <Button className="flex gap-2 w-full sm:w-auto text-sm sm:text-base">
+          <Copy className="w-4 h-4" /> Copy
         </Button>
       </div>
       <Editor
         ref={editorRef}
         initialValue="Your result will appear"
-        height="600px"
+        height="400px"
+        className="min-h-[400px] sm:min-h-[500px] md:min-h-[600px]"
         initialEditType="markdown"
         useCommandShortcut={true}
-        onChange={() =>
-          console.log(editorRef.current.getInstance().getMarkdown())
-        }
+        onChange={() => console.log(editorRef.current.getInstance().getMarkdown())}
       />
     </div>
   );

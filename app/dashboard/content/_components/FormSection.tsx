@@ -27,17 +27,25 @@ function FormSection({ selectedTemplete, userFormInput, loading }: PROPS) {
   };
 
   return (
-    <div className="p-5 shadow-md border bg-white rounded-lg">
+    <div className="p-3 sm:p-4 md:p-5 shadow-md border bg-white rounded-lg w-full">
       {selectedTemplete?.icon && (
-        <Image src={selectedTemplete.icon as string} alt="icon" width={70} height={70} />
+        <div className="flex justify-center sm:justify-start">
+          <Image 
+            src={selectedTemplete.icon as string} 
+            alt="icon" 
+            width={50} 
+            height={50}
+            className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px]" 
+          />
+        </div>
       )}
-      <h2 className="font-bold text-2xl mb-2 text-primary">{selectedTemplete?.name}</h2>
-      <p className="text-gray-500 text-sm">{selectedTemplete?.desc}</p>
+      <h2 className="font-bold text-xl sm:text-2xl mb-2 text-primary text-center sm:text-left mt-3">{selectedTemplete?.name}</h2>
+      <p className="text-gray-500 text-sm sm:text-base text-center sm:text-left">{selectedTemplete?.desc}</p>
 
-      <form className="mt-6" onSubmit={onSubmit}>
+      <form className="mt-4 sm:mt-6" onSubmit={onSubmit}>
         {selectedTemplete?.form?.map((item: FORM, index: number) => (
-          <div key={index} className="my-2 flex flex-col gap-2 mb-7">
-            <label className="font-bold">{item.label}</label>
+          <div key={index} className="my-2 flex flex-col gap-1.5 sm:gap-2 mb-5 sm:mb-7">
+            <label className="font-bold text-sm sm:text-base">{item.label}</label>
             {item.field === "input" ? (
               <Input 
                 name={item.name} 
@@ -69,10 +77,10 @@ function FormSection({ selectedTemplete, userFormInput, loading }: PROPS) {
         ))}
         <Button 
           type="submit"
-          className="w-full py-6"
+          className="w-full py-4 sm:py-6 text-sm sm:text-base"
           disabled={loading}
         >
-          {loading && <Loader2Icon className="animate-spin" />}
+          {loading && <Loader2Icon className="animate-spin mr-2" />}
           Generate Content
         </Button>
       </form>
