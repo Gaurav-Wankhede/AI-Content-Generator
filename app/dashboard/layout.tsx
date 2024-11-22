@@ -8,16 +8,15 @@ function layout ({
     children: React.ReactNode;
   }>) {
   return (
-    <div className='flex flex-col md:flex-row min-h-screen bg-gray-50'>
-      <div className='md:w-60 flex-shrink-0'>
-        <SideNav />
-      </div>
-      <div className='flex-grow'>
-        <Header />
-        <main className='mt-1 md:mt-2'>
-          {children}
-        </main>
-      </div>
+    <div className='bg-slate-100 h-screen'>
+        <div className='md:w-64 hidden md:block fixed'>
+            <SideNav/>        
+        </div>
+        <div className='ml-64'>
+          <Header/>
+            {children}
+        </div>
+        
     </div>
   )
 }
